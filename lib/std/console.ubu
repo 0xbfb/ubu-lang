@@ -1,0 +1,4 @@
+module std.console
+primitive console_write(text: str) -> i64
+# println is lowered directly only by the recovery compiler subset.
+# The historical pre1 design represented the public API here and platform effects as backend primitives.
