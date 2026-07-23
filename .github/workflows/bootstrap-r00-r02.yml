@@ -4,17 +4,22 @@ on:
   push:
     branches:
       - agent/r00-r02
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
   apply:
+    if: github.head_ref == 'agent/r00-r02' || github.ref_name == 'agent/r00-r02'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: Checkout source branch
         uses: actions/checkout@v4
         with:
+          ref: agent/r00-r02
           fetch-depth: 0
 
       - name: Verify and apply validated payload
