@@ -1,0 +1,2 @@
+module core.never
+# never is reserved for non-returning computations.

@@ -1,0 +1,14 @@
+module examples.sum_squares
+import std.console
+
+fn sum_squares(n: i64) -> i64
+    let i = 1
+    let acc = 0
+    while i <= n
+        acc = acc + i * i
+        i = i + 1
+    acc
+
+fn main() -> i32
+    std.console.println(sum_squares(1000000))
+    0

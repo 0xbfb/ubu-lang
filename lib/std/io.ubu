@@ -1,0 +1,4 @@
+module std.io
+import std.console
+import std.file
+# Compatibility aggregation module; no maintained C runtime.

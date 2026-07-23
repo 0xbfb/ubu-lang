@@ -1,0 +1,2 @@
+module core.unit
+# unit is a compiler-owned scalar type.

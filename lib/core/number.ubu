@@ -1,0 +1,6 @@
+module core.number
+fn abs_i64(value: i64) -> i64
+    if value < 0
+        -value
+    else
+        value

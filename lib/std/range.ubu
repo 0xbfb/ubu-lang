@@ -1,0 +1,6 @@
+module std.range
+fn sum_inclusive(start: i64, finish: i64) -> i64
+    if start > finish
+        0
+    else
+        start + sum_inclusive(start + 1, finish)

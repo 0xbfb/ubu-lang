@@ -1,0 +1,16 @@
+module std.math
+
+fn abs_i64(x: i64) -> i64
+    if x < 0
+        -x
+    else
+        x
+
+fn gcd(a: i64, b: i64) -> i64
+    if b == 0
+        abs_i64(a)
+    else
+        gcd(b, a % b)
+
+fn lcm(a: i64, b: i64) -> i64
+    abs_i64((a / gcd(a, b)) * b)

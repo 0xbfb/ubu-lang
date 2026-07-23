@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "project": "UbuLang",
+  "compiler": "ucc0",
+  "version": "recovery-r1",
+  "generated_at": "2026-07-23T12:56:12Z",
+  "artifact_status": "reconstructed-not-original",
+  "historical_target": {
+    "name": "ucc-pre1",
+    "zip": "ubulang-ucc-pre1.zip",
+    "sha256": "aefecfb170314b10a6a72ff753ad5a7c7592c4c77fc689352ab0739714dad556",
+    "binary_recovered": false
+  },
+  "implemented": [
+    "C11 bootstrap compiler",
+    "Ubu subset to standalone C emission",
+    "native build through GCC",
+    "functions and typed scalar parameters",
+    "let and assignment",
+    "if, else-if, else and while",
+    "final-expression return",
+    "console println",
+    "Windows and Unix scripts",
+    "dependency audit",
+    "structural pure-Ubu gate",
+    "four integration cases",
+    "negative syntax rejection test"
+  ],
+  "known_limitations": [
+    "no real multi-file module linker",
+    "no ADT or match lowering",
+    "no generic runtime semantics for Option, Result or Vec",
+    "no exact historical optimizer or benchmark harness",
+    "no feature or byte parity claim with historical ucc-pre1"
+  ]
+}
