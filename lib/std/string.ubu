@@ -1,0 +1,16 @@
+module std.string
+primitive string_len(text: str) -> i64
+primitive string_char_at(text: str, index: i64) -> char
+
+fn len(text: str) -> i64
+    string_len(text)
+fn is_empty(text: str) -> bool
+    len(text) == 0
+fn is_digit(c: char) -> bool
+    c >= '0' and c <= '9'
+fn is_alpha(c: char) -> bool
+    (c >= 'a' and c <= 'z') or (c >= 'A' and c <= 'Z') or c == '_'
+fn is_alnum(c: char) -> bool
+    is_alpha(c) or is_digit(c)
+fn is_whitespace(c: char) -> bool
+    c == ' ' or c == '\n' or c == '\r' or c == '\t'
