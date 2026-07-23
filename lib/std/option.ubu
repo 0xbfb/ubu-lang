@@ -1,0 +1,6 @@
+module std.option
+
+type OptionI64
+    SomeI64(i64)
+    NoneI64
+# ADT lowering is documented but not implemented by recovery-r1.
