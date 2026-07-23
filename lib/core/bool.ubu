@@ -1,0 +1,3 @@
+module core.bool
+fn bool_not(value: bool) -> bool
+    not value
