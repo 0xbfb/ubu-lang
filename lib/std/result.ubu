@@ -1,0 +1,6 @@
+module std.result
+
+type ResultI64
+    OkI64(i64)
+    ErrI64(i64)
+# ADT lowering is documented but not implemented by recovery-r1.
