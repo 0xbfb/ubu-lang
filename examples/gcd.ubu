@@ -1,0 +1,13 @@
+module examples.gcd
+import std.console
+
+fn gcd(a: i64, b: i64) -> i64
+    while b != 0
+        let next = a % b
+        a = b
+        b = next
+    a
+
+fn main() -> i32
+    std.console.println(gcd(462, 1071))
+    0
