@@ -1,0 +1,6 @@
+archive=e88c110-tree.tar.xz
+archive_size=258996
+archive_sha256=8d9db9c126c80bd6e6ad2d6272438929a97aa2d6e7c9060f94cffb418347c1f8
+chunks=22
+chunk_size=12000
+target_local_commit=e88c110a57691558b811c6de037963599ac5a581
